@@ -1,0 +1,14 @@
+header {
+    background-color: var(--main-red-color);
+    height: 15vh;
+    flex: 1;
+    padding: 0 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
