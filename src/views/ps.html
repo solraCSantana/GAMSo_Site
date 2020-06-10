@@ -1,15 +1,85 @@
 {% extends "layout.html" %}
-{% set pageId = "page-home" %}
+{% set pageId = "page-ps" %}
 {% block styles %}
-    <link rel="stylesheet" href="styles/ps.css">
+	<link rel="stylesheet" href="styles/ps.css">
 {% endblock styles %}
 {% block content %}
-    <div class="content">
-        <main>
-            <h1>Conteudo da pagina do PS</h1>
-        </main>
-    </div>
+	<div class="content">
+		<main>
+			<form action="#" method="GET">
+				<h1>Inscrição na GAMSo</h1>
+				<fieldset>
+					<legend>
+						<h2>Dados</h2>
+					</legend>
+					<div class="field-group">
+						<div class="field">
+							<label for="name">Nome</label>
+							<input type="text" name="name" required="required">
+						</div>
+						<div class="field">
+							<label for="image">Idade</label>
+							<input type="number" name="image" required="required">
+						</div>
+					</div>
+					<div class="student-button">
+						<button type="button" id="green" class="normal">
+							<span>Eu estudo na UFSCar!</span>
+						</button>
+						<input type="number" class="hidden" name="student" required>
+						<button type="button" id="red" class="normal">
+							<span>Eu não estudo na UFSCar!</span>
+						</button>
+					</div>
+					<div class="ufscar-student hidden">
+						<div class="field-group">
+							<div class="field">
+								<label for="ra">RA</label>
+								<input type="number" name="ra">
+							</div>
+							<div class="field">
+								<label for="course">Curso</label>
+								<input type="text" name="course">
+							</div>
+						</div>
+					</div>
+					<div class="outer hidden">
+						<h1>Perguntas a serem feitas para <br/>pessoas de fora da UFSCar</h1>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h2>Áreas de atuação</h2>
+						<span>Selecione uma ou mais áreas abaixo</span>
+					</legend>
+					<div class="areas-grid">
+						<li data-id="Programadore">
+							<p role="img" aria-label="disquete">💾</p>
+							<span>Programadore</span>
+						</li>
+						<li data-id="Artista Visual">
+							<p role="img" aria-label="pincel">🖌️</p>
+							<span>Artista Visual</span>
+						</li>
+						<li data-id="Artista Sonoro">
+							<p role="img" aria-label="som">🔊</p>
+							<span>Artista Sonoro</span>
+						</li>
+						<li data-id="Game Designer">
+							<p role="img" aria-label="esquadro">📐</p>
+							<span>Game Designer</span>
+						</li>
+						</li>
+					</div>
+					<input type="hidden" name="areas">
+				</fieldset>
+				<div class="end">
+					<button type="submit">Inscrever-se</button>
+				</div>
+			</form>
+		</main>
+	</div>
 {% endblock content %}
 {% block scripts %}
-    <script src="/scripts/ps.js"></script>
+	<script src="/scripts/ps.js"></script>
 {% endblock scripts %}

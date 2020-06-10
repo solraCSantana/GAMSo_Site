@@ -1,0 +1,15 @@
+@media(min-width: 600px) {
+    header .content {
+        width: 600px;
+    }
+}
+
+@media(max-width: 900px) {
+    #page-ps .field-group {
+        flex-direction: column;
+    }
+
+    #page-ps .field-group .field + .field {
+        margin-left: 0;
+    }
+}

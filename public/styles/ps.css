@@ -1,0 +1,205 @@
+form {
+    background-color: white;
+
+    margin: 80px auto;
+    padding: 64px;
+
+    border-radius: 8px;
+
+    max-width: 730px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+    font-size: 14px;
+}
+
+form .field {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input,
+form select {
+    background-color: var(--main-background-color);
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+form .student-button {
+	display: flex;
+	width: 600;
+	flex: 1;
+	margin-bottom: 24px;
+}
+
+form .student-button button {
+	width: 300px;
+    height: 56px;
+
+    border: 0px solid transparent;
+}
+
+form .student-button button.unselected {
+	width: 100px;
+}
+
+form .student-button button.selected {
+	width: 500px;
+}
+
+form .student-button button span {
+    pointer-events: none;
+}
+
+form .student-button button#green {
+    border-radius: 8px 0 0 8px;
+
+    background-color: #bcfabc;
+    border: 2px solid #34cb79;
+}
+
+form .student-button button#red {
+    border-radius: 0 8px 8px 0;
+
+    background-color: #fabcbc;
+    border: 2px solid #cb3479;
+}
+
+form .student-button button#green .selected {
+    background-color: #acffac;
+}
+
+form .student-button button#red .selected {
+    background-color: #ffacac;
+}
+
+form .end {
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+
+form .end button {
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--main-red-color);
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 40px;
+
+    transition: background-color 400ms;
+}
+
+form .end button:hover {
+    background-color: #590000;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.areas-grid li {
+    background-color: #e5e5e5;
+    list-style: none;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.areas-grid li span {
+    margin-top: 12px;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+}
+
+.areas-grid li.selected {
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.areas-grid li p {
+	font-size: 30px;
+}
+
+.areas-grid li p,
+.areas-grid li span {
+    pointer-events: none;
+}
+
+.hidden {
+	display: none;
+}
