@@ -12,19 +12,19 @@ Instale o node.js e o npm e, com eles, instale também o Chocolatey (você pode 
 
 Execute o seguinte comando no Terminal (para Linuxes baseados em Ubuntu/Debian):
 
-'sudo apt-get install nodejs'
+`sudo apt-get install nodejs`
 
 
-###### Ambos!
+###### Ambos:
 
-Dê 'cd' até a pasta do projeto e use os seguintes comandos:
+Dê `cd` até a pasta do projeto e use os seguintes comandos:
 
-'npm install express'
-'npm install nunjucks'
-'npm install sqlite3'
-'npm install nodemon -D'
+`npm install express`
+`npm install nunjucks`
+`npm install sqlite3`
+`npm install nodemon -D`
 
-O '-D' implica em uma extensão de desenvolvimento, portanto não é necessária quando o site estiver pronto.
+O `-D` implica em uma extensão de desenvolvimento, portanto não é necessária quando o site estiver pronto.
 
 ###### <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -43,16 +43,16 @@ Install node.js and npm and, with them, install Chocolatey too (you can do it th
 
 Run the following command inside your Terminal (for Ubuntu/Debian based Linuxes):
 
-'sudo apt-get install nodejs'
+`sudo apt-get install nodejs`
 
 
-###### Both
+###### Both:
 
-Use 'cd' to the project folder and run the following commands:
+Use `cd` to the project folder and run the following commands:
 
-'npm install express'
-'npm install nunjucks'
-'npm install sqlite3'
-'npm install nodemon -D'
+`npm install express`
+`npm install nunjucks`
+`npm install sqlite3`
+`npm install nodemon -D`
 
-'-D' implies in a dev extension, so it isn't required when the webside is done.
+`-D` implies in a dev extension, so it isn't required when the webside is done.
